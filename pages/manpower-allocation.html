@@ -26,7 +26,7 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
-          <a class="navbar-brand brand-logo" href="../dashboard.html"><img src="../images/cmc-logo.png" alt="logo"/></a>
+          <a class="navbar-brand brand-logo" href="../dashboard.html"><img src="../images/logo.png" alt="logo"/></a>
           <a class="navbar-brand brand-logo-mini" href="../dashboard.html"><img src="../images/logo-mini.svg" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="typcn typcn-th-menu"></span>
@@ -45,7 +45,7 @@
                 <i class="typcn typcn-cog-outline text-primary"></i>
                 Settings
               </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item"  href="../index.html">
                 <i class="typcn typcn-eject text-primary"></i>
                 Logout
               </a>
@@ -57,24 +57,30 @@
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-date dropdown">
-            <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;" id="messageDropdown" href="#" data-toggle="dropdown">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;" id="calendarDropdown" href="#" data-toggle="dropdown">
               <h6 class="date mb-0">Today : Mar 23</h6>
               <i class="ph-calendar-check"></i>
             </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="ph-envelope"></i>              
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="calendarDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Schedule for this week:</p>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                    <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                  <span class="dot">11</span>
                 </div>
                 <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                  <h6 class="preview-subject ellipsis font-weight-normal">Jazmine Stephenson
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Final Interview at  1:00 PM
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <span class="dot">12</span>
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Charles Bray
                   </h6>
                   <p class="font-weight-light small-text text-muted mb-0">
                     The meeting is cancelled
@@ -83,25 +89,84 @@
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                    <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                  <span class="dot">13</span>
                 </div>
                 <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Carl Ferrell
                   </h6>
                   <p class="font-weight-light small-text text-muted mb-0">
-                    New product launch
+                    Accepted The Job Offer
                   </p>
                 </div>
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                    <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                  <span class="dot">13</span>
                 </div>
                 <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Benjamin Adams
                   </h6>
                   <p class="font-weight-light small-text text-muted mb-0">
-                    Upcoming board meeting
+                    Final Interview at 10:00 AM
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <span class="dot">14</span>
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Sara Wagner
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Final Interview at 10:00 AM
+                  </p>
+                </div>
+              </a>
+
+              <div class="col text-center"><a href="../pages/calendar.html">View Calendar</a></div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="ph-envelope"></i>              
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Email Messages</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Jazmine Stephenson
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Reschedule the Interview
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../images/faces/face24.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Charles Bray
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../images/faces/face27.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Carl Ferrell
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Accepted The Job Offer
                   </p>
                 </div>
               </a>
@@ -116,12 +181,10 @@
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="typcn typcn-info mx-0"></i>
-                  </div>
+                  <span class="dot-yellow ph-warning"></span>
                 </div>
                 <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <h6 class="preview-subject font-weight-normal">You have pending approval</h6>
                   <p class="font-weight-light small-text mb-0 text-muted">
                     Just now
                   </p>
@@ -129,27 +192,23 @@
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning">
-                    <i class="typcn typcn-cog-outline mx-0"></i>
-                  </div>
+                  <span class="dot-green ph-check"></span>
                 </div>
                 <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <h6 class="preview-subject font-weight-normal">Charles Bray Approved the...</h6>
                   <p class="font-weight-light small-text mb-0 text-muted">
-                    Private message
+                    10 mins ago
                   </p>
                 </div>
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info">
-                    <i class="typcn typcn-user mx-0"></i> 
-                  </div>
+                  <span class="dot-red ph-x"></span>
                 </div>
                 <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <h6 class="preview-subject font-weight-normal">Carl Ferrell declined your re.. </h6>
                   <p class="font-weight-light small-text mb-0 text-muted">
-                    2 days ago
+                    15 mins ago
                   </p>
                 </div>
               </a>
@@ -352,18 +411,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#recruitment-list" aria-expanded="false" aria-controls="form-elements">
-              <i class="ph-users-three menu-icon"></i>
+           <a class="nav-link" href="../pages/recruitment.html">
+              <i class="ph-presentation-chart menu-icon"></i>
               <span class="menu-title">Recruitment</span>
-              <i class="ph-caret-down caret-down"></i>
             </a>
-            <div class="collapse" id="recruitment-list">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../pages/new-application.html">New Application</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/applicant-list.html">Applicant List</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/calendar.html">Calendar</a></li>                           
-              </ul>
-            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#maintenance-list" aria-expanded="false" aria-controls="charts">
@@ -411,17 +462,15 @@
             <div class="card">
                 <div class="card-body">
                   <h4>List of Vacant Position</h4>
-                    <div class="text-right">
+                    <div class="text-right mb-2">
 
                             <!-- Button trigger modal -->
                       <button type="button" class="btn btn-primary btn-icon-text" data-toggle="modal" data-target="#AddPositionModal">
                             <i class="ph-user-plus btn-icon-prepend"></i>
                             Add position
                       </button>
-                      <button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#RightModal" aria-hidden="true">
-                            <i class="ph-funnel btn-icon-prepend"></i>
-                            Filter  
-                      </button>
+                      <button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#RightModal" aria-hidden="true"><i class="ph-funnel btn-icon-prepend"></i>
+                      Filter  </button>
                       <label><input type="search" class="form-control" placeholder="Search" aria-controls="order-listing"></label>
                     </div>
                            
@@ -677,6 +726,8 @@
                       </div>
                     </div>
 
+
+
                   </form>
                 </div>
 
@@ -778,17 +829,6 @@
     </div>
     <!-- modal-dialog -->
   </div>
-  <!-- modal -->
-
-
-
-
-
-
-
-
-
-
 
 
       <!-- main-panel ends -->
