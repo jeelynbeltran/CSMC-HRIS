@@ -458,36 +458,41 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
-
+        <div class="col-md-12">
               <div class="card">
                 <div class="card-body">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="home-1" aria-selected="true">New Hire Probitionary</a>
+                      <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="personal-1" aria-selected="true">Personal</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#tab2" role="tab" aria-controls="profile-1" aria-selected="true">New Hire Regularize</a>
+                      <a class="nav-link"  data-toggle="tab" href="#tab2" role="tab" aria-controls="family-1" aria-selected="false">Family</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="contact-1" aria-selected="false">For Promotion</a>
+                      <a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="education-1" aria-selected="false">Education</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"  data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="contact-1" aria-selected="false">Separation</a>
-                    </li>                    
+                      <a class="nav-link"  data-toggle="tab" href="#tab4" role="tab" aria-controls="workexp-1" aria-selected="false">Work Experience</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link"  data-toggle="tab" href="#tab5" role="tab" aria-controls="application-1" aria-selected="false">Application</a>
+                    </li>                  
                   </ul>
 
                   <div class="tab-content">
 
-                  <h4 class="card-title mt-4 pl-3"><div class="red-title">PERSONAL INFORMATION</div></h4>
+                  <h4 class="card-title mt-4 mb-4"><div class="red-title">PERSONAL INFORMATION</div></h4>
                     <div class="tab-pane fade active show" id="tab1" role="tabpanel">
-                      <div class="media">
-
                         <div class="row">
-                          <div class="col-md-3">
-                            <img src="../images/upload-image.svg" alt="upload-image" class="upload-image" />
-                            <form action="/action_page.php">
-                            <input type="file" id="myFile" name="filename"></form></div>
-                          <div class="col-md-3"><label for="Title">Title</label>
+
+                          <div class="col-md-2">
+                            <label class="your-face" id="image-form" for="image-input">
+                              <div class="image-persuader"><img src="../images/upload-image.svg" alt="upload-image" class="upload-image"/></div>
+                              <input class="hide" id="image-input" type="file"/>
+                            </label>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="Title">Title</label>
                             <select class="form-control">
                               <option value="1">Select</option>
                               <option value="2">Mr.</option>
@@ -495,214 +500,521 @@
                               <option value="4">Mrs.</option>
                             </select>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-4">
                             <div class="form-group">
-                              <label for="exampleInputUsername1">First Name</label>
+                              <label for="exampleInputUsername1">First Name</label> <label style="color:red;"> *</label>
                               <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter First Name">
                             </div>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-4">
                             <div class="form-group">
-                              <label for="exampleInputUsername1">Middle Name</label>
-                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter First Name">
+                              <label for="exampleInputUsername1">Last Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Last Name">
                             </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-2">
+
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Middle Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Middle Name">
+                            </div>                            
+                          </div>
+                          <div class="col-md-2">
+                            <label for="Title">Suffix</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">JR</option>
+                              <option value="3">SR</option>
+                              <option value="4">I</option>
+                              <option value="5">II</option>
+                              <option value="6">III</option>
+                              <option value="7">IV</option>
+                              <option value="8">V</option>
+                              <option value="9">VI</option>
+                              <option value="10">VII</option>
+                              <option value="11">VIII</option>
+                              <option value="12">IX</option>
+                              <option value="13">X</option>
+                            </select>                           
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Nickname</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Nickname">
+                            </div>                            
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                           <label for="Title">Gender</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Male</option>
+                              <option value="3">Female</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="Title">Date of Birth</label><label style="color:red;"> *</label>
+                            <div id="datepicker-popup" class="input-group date datepicker">
+                                 <input type="text" class="form-control" placeholder="Enter Date of Birth">
+                                 <span class="input-group-addon input-group-append border-left">
+                                   <span class="typcn typcn-calendar-outline input-group-text"></span>
+                                 </span>
+                            </div> 
+                          </div>
+                          <div class="col-md-4">
+                             <div class="form-group">
+                              <label for="exampleInputUsername1">Place of Birth</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Place of Birth">
+                            </div>                           
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label for="Title">Civil Status</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Single</option>
+                              <option value="3">Married</option>
+                              <option value="4">Widowed</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="Title">Religion</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Religion1</option>
+                              <option value="3">Religion2</option>
+                              <option value="4">Religion3</option>
+                            </select>
                           </div>
 
+                          <div class="col-md-4">
+                            <label for="Title">Citizenship</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Filipino</option>
+                              <option value="3">Non-Filipino</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Email Address</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Email Address">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Contact Number 1</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Email Address">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Contact Number 2</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Email Address">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label for="Title">Language Spoken / Written (1)</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Language1</option>
+                              <option value="3">Language2</option>
+                              <option value="4">Language3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="Title">Language Spoken / Written (2)</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Language1</option>
+                              <option value="3">Language2</option>
+                              <option value="4">Language3</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Language Spoken / Written (3)</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Language1</option>
+                              <option value="3">Language2</option>
+                              <option value="4">Language3</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">SSS No.</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter SSS No.">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">TIN No.</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter TIN No.">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Pag ibig No.</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Pag ibig No.">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">PhilHealth No.</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter PhilHealth No.">
+                            </div>
+                          </div>
                         </div>
 
-                     </div>
-                    </div>
+
+                        <hr>
+
+                        <h4 class="card-title mt-4"><div class="red-title">CURRENT ADDRESS</div></h4>
+
+                        <div class="row">
+                          <div class="col-md-8">
+                              <div class="form-group">
+                              <label for="exampleInputUsername1">Unit / Floor/Street Number, Subdivision/Building Name, Street Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Unit / Floor/Street Number, Subdivision/Building Name, Street Name">
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Country</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Country1</option>
+                              <option value="3">Country2</option>
+                              <option value="4">Country3</option>
+                              <option value="5">Country4</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label for="Title">Province</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Province1</option>
+                              <option value="3">Province2</option>
+                              <option value="4">Province3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="Title">City/Municipality</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">City/Municipality1</option>
+                              <option value="3">City/Municipality2</option>
+                              <option value="4">City/Municipality3</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Region</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Region1</option>
+                              <option value="3">Region2</option>
+                              <option value="4">Region3</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="Title">Barangay</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Barangay1</option>
+                              <option value="3">Barangay2</option>
+                              <option value="4">Barangay3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Zip Code</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Zip Code">
+                            </div>
+                          </div>
+                        </div> 
+
+                        <hr>
+
+                        <h4 class="card-title mt-4"><div class="red-title">PERMANENT ADDRESS</div></h4>
+
+                        <div class="form-check mb-4">
+                          <label class="form-check-label">
+                            <input class="checkbox" type="checkbox">
+                            Same as Current Address
+                          </label>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-8">
+                              <div class="form-group">
+                              <label for="exampleInputUsername1">Unit / Floor/Street Number, Subdivision/Building Name, Street Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Unit / Floor/Street Number, Subdivision/Building Name, Street Name">
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Country</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Country1</option>
+                              <option value="3">Country2</option>
+                              <option value="4">Country3</option>
+                              <option value="5">Country4</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label for="Title">Province</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Province1</option>
+                              <option value="3">Province2</option>
+                              <option value="4">Province3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="Title">City/Municipality</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">City/Municipality1</option>
+                              <option value="3">City/Municipality2</option>
+                              <option value="4">City/Municipality3</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Region</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Region1</option>
+                              <option value="3">Region2</option>
+                              <option value="4">Region3</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="Title">Barangay</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Barangay1</option>
+                              <option value="3">Barangay2</option>
+                              <option value="4">Barangay3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Zip Code</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Zip Code">
+                            </div>
+                          </div>
+                        </div> 
+
+                        <hr>
+
+                        <h4 class="card-title mt-4"><div class="red-title">CONTACT PERSON IN CASE OF EMERGENCY</div></h4>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">First Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter First Name">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Middle Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstMiddleForm" placeholder="Enter Middle Name">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Last Name</label>
+                              <input type="text" class="form-control" id="LastNameForm" placeholder="Enter Last Name">
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-md-2">
+                            <label for="Title">Suffix</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">JR</option>
+                              <option value="3">SR</option>
+                              <option value="4">I</option>
+                              <option value="5">II</option>
+                              <option value="6">III</option>
+                              <option value="7">IV</option>
+                              <option value="8">V</option>
+                              <option value="9">VI</option>
+                              <option value="10">VII</option>
+                              <option value="11">VIII</option>
+                              <option value="12">IX</option>
+                              <option value="13">X</option>
+                            </select>                           
+                          </div>
+                          <div class="col-md-2">
+                            <label for="Title">Relationship</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Relationship1</option>
+                              <option value="3">Relationship2</option>
+                              <option value="4">Relationship3</option>
+                              <option value="5">Relationship4</option>
+                            </select> 
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Contact Number 1</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstMiddleForm" placeholder="Enter Contact Number 1">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Contact Number 2</label>
+                              <input type="text" class="form-control" id="LastNameForm" placeholder="Enter Contact Number 2">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-check mb-4">
+                          <label class="form-check-label">
+                            <input class="checkbox" type="checkbox">
+                            Same as Current Address
+                          </label>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-8">
+                              <div class="form-group">
+                              <label for="exampleInputUsername1">Unit / Floor/Street Number, Subdivision/Building Name, Street Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Unit / Floor/Street Number, Subdivision/Building Name, Street Name">
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Country</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Country1</option>
+                              <option value="3">Country2</option>
+                              <option value="4">Country3</option>
+                              <option value="5">Country4</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label for="Title">Province</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Province1</option>
+                              <option value="3">Province2</option>
+                              <option value="4">Province3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="Title">City/Municipality</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">City/Municipality1</option>
+                              <option value="3">City/Municipality2</option>
+                              <option value="4">City/Municipality3</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="Title">Region</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Region1</option>
+                              <option value="3">Region2</option>
+                              <option value="4">Region3</option>
+                            </select>
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="Title">Barangay</label><label style="color:red;"> *</label>
+                            <select class="form-control">
+                              <option value="1">Select</option>
+                              <option value="2">Barangay1</option>
+                              <option value="3">Barangay2</option>
+                              <option value="4">Barangay3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">Zip Code</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Zip Code">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col text-right"><button type="button" class="w-15 mt-4 btn btn-primary btn-icon-text">Next</button>   </div>  
+
+ <!-- PERSONAL TAB ENDS --> </div> 
+
+
 
                     <div class="tab-pane fade" id="tab2" role="tabpanel">
-                      <div class="media">
                         <div class="col-md-12">
                           <div class="card">
-                            <div class="table-responsive pt-3">
-                              <table class="table table-striped project-orders-table">
-                                <thead>
-                                  <tr>
-                                    <th class="ml-5"><input type="checkbox" ></th>
-                                    <th >Name</th>
-                                    <th>Division</th>
-                                    <th>Department</th>
-                                    <th>Effectivity Date</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Eliza Barrett</td>
-                                    <td>Clinical Nursing Operations</td>
-                                    <td>Clinical Nursing Operations</td>
-                                    <td>April 05, 2022</td>
-
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Eugene Patel</td>
-                                    <td>Finance</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>February 10, 2022</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Beatrice Hughes</td>
-                                    <td>Clinical & Specialty Services</td>
-                                    <td>Finance</td>
-                                    <td>January 20, 2022</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Sara Jackson</td> 
-                                    <td>eOffsite & Ancillary Services</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>December 24, 2021</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Dorothy Holland</td>
-                                    <td>Business Planning & Development</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>November 05, 2021</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                                INPUT DETAILS HERE
                           </div>
                         </div>
-                      </div>
                     </div>
 
                     <div class="tab-pane fade" id="tab3" role="tabpanel">
-                      <div class="media">
                         <div class="col-md-12">
                           <div class="card">
-                            <div class="table-responsive pt-3">
-                              <table class="table table-striped project-orders-table">
-                                <thead>
-                                  <tr>
-                                    <th class="ml-5"><input type="checkbox" ></th>
-                                    <th >Name</th>
-                                    <th>Division</th>
-                                    <th>Department</th>
-                                    <th>Effectivity Date</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Eliza Barrett</td>
-                                    <td>Clinical Nursing Operations</td>
-                                    <td>Clinical Nursing Operations</td>
-                                    <td>April 05, 2022</td>
-
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Eugene Patel</td>
-                                    <td>Finance</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>February 10, 2022</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Beatrice Hughes</td>
-                                    <td>Clinical & Specialty Services</td>
-                                    <td>Finance</td>
-                                    <td>January 20, 2022</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Sara Jackson</td> 
-                                    <td>eOffsite & Ancillary Services</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>December 24, 2021</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Dorothy Holland</td>
-                                    <td>Business Planning & Development</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>November 05, 2021</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                                INPUT DETAILS HERE
                           </div>
                         </div>
-                      </div>
                     </div>
 
                     <div class="tab-pane fade" id="tab4" role="tabpanel">
-                      <div class="media">
                         <div class="col-md-12">
                           <div class="card">
-                            <div class="table-responsive pt-3">
-                              <table class="table table-striped project-orders-table">
-                                <thead>
-                                  <tr>
-                                    <th class="ml-5"><input type="checkbox" ></th>
-                                    <th >Name</th>
-                                    <th>Division</th>
-                                    <th>Department</th>
-                                    <th>Effectivity Date</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Eliza Barrett</td>
-                                    <td>Clinical Nursing Operations</td>
-                                    <td>Clinical Nursing Operations</td>
-                                    <td>April 05, 2022</td>
-
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Eugene Patel</td>
-                                    <td>Finance</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>February 10, 2022</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Beatrice Hughes</td>
-                                    <td>Clinical & Specialty Services</td>
-                                    <td>Finance</td>
-                                    <td>January 20, 2022</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Sara Jackson</td> 
-                                    <td>eOffsite & Ancillary Services</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>December 24, 2021</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Dorothy Holland</td>
-                                    <td>Business Planning & Development</td>
-                                    <td>DEPARTMENT</td>
-                                    <td>November 05, 2021</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                                INPUT DETAILS HERE
                           </div>
                         </div>
-                      </div>
                     </div>
 
-                  </div>
+                    <div class="tab-pane fade" id="tab5" role="tabpanel">
+                        <div class="col-md-12">
+                          <div class="card">
+                                INPUT DETAILS HERE
+                          </div>
+                        </div>
+                    </div>
+                  
                 </div>
               </div>
+          </div>
 
 
-
-
-
-
-      	
 
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -718,6 +1030,7 @@
         </footer>
         <!-- partial -->
       </div>
+
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->

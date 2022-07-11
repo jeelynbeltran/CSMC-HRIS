@@ -16191,6 +16191,9 @@ button.bg-dark:focus,
 .shadow-none {
   box-shadow: none !important;
 }
+.w-15 {
+  width: 15% !important;
+}
 
 .w-25 {
   width: 25% !important;
@@ -26040,4 +26043,9 @@ background-color: transparent;
 .upload-image{
   width: 150px;
   height: 150px;
+  margin-bottom: -100px;
+}
+
+.hide{
+  visibility: hidden;
 }
