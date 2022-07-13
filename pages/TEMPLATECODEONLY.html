@@ -53,18 +53,21 @@
 
                             DATEPICKER
 
-                            <div class="container">
-                               <div class="col-sm-6" style="height:130px;">
-                                  <div class="form-group">
-                                     <div class='input-group date' id='datetimepicker10'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-calendar">
-                                        </span>
-                                        </span>
-                                     </div>
-                                  </div>
-                               </div>
+                            <div id="datepicker-popup" class="input-group date datepicker">
+                                 <input type="text" class="form-control" placeholder="Enter Date of Birth">
+                                 <span class="input-group-addon input-group-append border-left">
+                                   <span class="typcn typcn-calendar-outline input-group-text"></span>
+                                 </span>
+                            </div> 
+
+                            <label for="Title">Date of Birth</label><label style="color:red;"> *</label>
+                            <div id="datepicker-popup" class="input-group date datepicker">
+                                 <input type="text" class="form-control" placeholder="Enter Date of Birth">
+                                 <span class="input-group-addon input-group-append border-left">
+                                   <span class="typcn typcn-calendar-outline input-group-text"></span>
+                                 </span>
+                            </div> 
+
 
                     CHECKBOX
                     <div class="form-check">
@@ -86,3 +89,191 @@
 </div>
 
 
+
+<!-- EDUCATIONAL BACKGROUND TAB --> 
+        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                        <div class="row mt-4 mb-2">
+                          <div class="col-md-6 red-title mt-3">EDUCATIONAL BACKGROUND</div>
+                          <div class="col-md-6 text-right">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#EducBackground"><i class="ph-plus btn-icon-prepend"></i>
+                            Add School</button>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="table-responsive pt-3">
+                              <table class="table table-striped project-orders-table">
+                                <thead>
+                                  <tr>
+                                    <th>Relationship</th>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Civil Status</th>
+                                    <th>Occupation</th>
+                                    <th>Name of Company/School</th>
+                                    <th>Dependent?</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>No records found.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div> 
+
+                        <div class="row mt-4 mb-2">
+                          <div class="col-md-6 red-title mt-3">PROFESSIONAL QUALIFICATIONS / LICENSES / CERTIFICATIONS</div>
+                          <div class="col-md-6 text-right">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#Certifications"><i class="ph-plus btn-icon-prepend"></i>
+                            Add School</button>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="table-responsive pt-3">
+                              <table class="table table-striped project-orders-table">
+                                <thead>
+                                  <tr>
+                                    <th>Relationship</th>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Civil Status</th>
+                                    <th>Occupation</th>
+                                    <th>Name of Company/School</th>
+                                    <th>Dependent?</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>No records found.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div> 
+        </div> 
+
+
+<!-- Modal ADD POSITION-->
+        <div class="modal fade" id="AddPositionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Position</h5>
+              </div>
+              <div class="modal-body">
+                <div class="col-md-12 grid-margin">
+                      <form class="form-sample">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group row">
+                              <label class="ml-3">Company </label> <p style="color:red;"> *</p>
+                              <div class="col-sm-12">
+                                <select class="form-control">
+                                  <option selected value="">Please Select</option>
+                                  <option value="1">Company1</option>
+                                  <option value="2">Company2</option>
+                                  <option value="3">Company3</option>
+                                  <option value="4">Company4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="ml-3">Division </label> <p style="color:red;"> *</p>
+                              <div class="col-sm-12">
+                                <select class="form-control">
+                                  <option selected value="">Please Select</option>
+                                  <option value="1">Division1</option>
+                                  <option value="2">Division2</option>
+                                  <option value="3">Division3</option>
+                                  <option value="4">Division4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="ml-3">Department </label> <p style="color:red;"> *</p>
+                              <div class="col-sm-12">
+                                <select class="form-control">
+                                  <option selected value="">Please Select</option>
+                                  <option value="1">Department1</option>
+                                  <option value="2">Department2</option>
+                                  <option value="3">Department3</option>
+                                  <option value="4">Department4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="ml-3">Section </label> <p style="color:red;"> *</p>
+                              <div class="col-sm-12">
+                                <select class="form-control">
+                                  <option selected value="">Please Select</option>
+                                  <option value="1">Section1</option>
+                                  <option value="2">Section2</option>
+                                  <option value="3">Section3</option>
+                                  <option value="4">Section4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="ml-3">Position </label> <p style="color:red;"> *</p>
+                              <div class="col-sm-12">
+                                <select class="form-control">
+                                  <option selected value="">Please Select</option>
+                                  <option value="1">Position1</option>
+                                  <option value="2">Position2</option>
+                                  <option value="3">Position3</option>
+                                  <option value="4">Position4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                      </form>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer1">
+                    <div class="row">
+                      <div class="col text-left"><button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button></div>
+                      <div class="col text-right"><button type="button" class="btn btn-primary">Add Position</button></div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>

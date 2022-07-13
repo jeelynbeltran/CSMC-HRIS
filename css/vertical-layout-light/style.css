@@ -26049,3 +26049,9 @@ background-color: transparent;
 .hide{
   visibility: hidden;
 }
+
+.button-text{
+  font-size: 1rem;
+  font-weight: 600;
+  width: 150px;
+}
