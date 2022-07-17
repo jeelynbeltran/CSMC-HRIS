@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -622,12 +622,12 @@
                   <div class="tab-content">
 
                     <div class="mb-3 mt-3 ml-3">
-                          <button type="button" class="btn btn-primary btn-icon-text">
+                          <button type="button" class="btn btn-primary btn-icon-text" data-toggle="modal" data-target="#ApproveSelected">
                             <i class="ph-check-circle btn-icon-prepend"></i>
                             Approve Selected
                           </button>
-                          <button type="button" class="btn btn-outline-danger btn-icon-text">
-                            <i class="ph-x-circle btn-icon-prepend"></i>
+                          <button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#RejectSelected">
+                            <i class="ph-x-circle btn-icon-prepend" ></i>
                             Reject Selected
                           </button>
                     </div>
@@ -878,7 +878,80 @@
 
 
 
+<!-- Modal Approve Selected-->
+        <div class="modal fade" id="ApproveSelected" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-confirmation" role="document">
+            <div class="modal-content">
+              <div class="modal-body">  
+                <form class="form-sample">
+                  <div class="row mb-2 pl-2 pr-2">
+                    <div class="col text-center">
+                      <img src="../images/approve-icon.svg" alt="Image">
+                    </div>
+                  </div>
+                    <div class="row mb-4 pl-2 pr-2">
+                      <div class="col text-center">
+                        <label>Are you sure you want to approve?</label>
+                      </div>
+                    </div>
+                  </form>
 
+                    <div class="modal-footer1">
+                      <div class="row">
+                        <div class="col text-left">
+                          <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                        <div class="col text-right">
+                          <button type="button" class="btn btn-primary">Approve</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Modal Reject Selected-->
+        <div class="modal fade" id="RejectSelected" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-confirmation" role="document">
+            <div class="modal-content">
+              <div class="modal-body">  
+                <form class="form-sample">
+                  <div class="row mb-2 pl-2 pr-2">
+                    <div class="col text-center">
+                      <img src="../images/reject-icon.svg" alt="Image">
+                    </div>
+                  </div>
+                    <div class="row mb-4 pl-2 pr-2">
+                      <div class="col text-center">
+                        <label>Are you sure you want to Reject?</label>
+                      </div>
+                    </div>
+                    <div class="row mb-2 plr-2">
+                        <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Input remarks here."></textarea>
+                      </div>
+                    </div>
+
+                  </form>
+
+                    <div class="modal-footer1">
+                      <div class="row">
+                        <div class="col text-left">
+                          <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                        <div class="col text-right">
+                          <button type="button" class="btn btn-primary">Reject</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="mt-4 footer">
