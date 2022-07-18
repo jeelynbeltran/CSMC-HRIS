@@ -24042,6 +24042,12 @@ div.tagsinput span.tag a {
   .content-wrapper {
     padding: 1.5rem 1.5rem;
   }
+
+}
+
+.img-75{
+  width: 75%;
+  height: 75%;
 }
 
 /* Sidebar */
@@ -26075,4 +26081,19 @@ background-color: transparent;
   font-size: 1rem;
   font-weight: 600;
   width: 150px;
+}
+
+.change-photo{
+position: absolute;
+    bottom: 40px;
+    right: 66px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ph-pencil-upload{
+  font-size: 3rem;
+  color: #f8f9fa;
+  padding: 16px;
+  text-decoration: none;
 }

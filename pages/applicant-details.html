@@ -228,8 +228,9 @@
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav mr-lg-2">
           <li class="nav-item ml-0">
-            <h4 class="mb-0">New Application</h4>
+            <h4 class="mb-0">Applicant Details</h4>
           </li>
+
         </ul>
         <ul class="navbar-nav navbar-nav-right">
         </ul>
@@ -457,9 +458,125 @@
         </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">
+      <div class="main-panel pl-4 pr-4">
+      	<div class="row mb-4">
+          <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-body">
+                	<div class="row mb-s ">
+                		<div class="col text-center">
+							<label id="image-form" for="image-input">
+                              	<img src="../images/faces/employee1.svg" alt="Image" class="img-75"/>
+                              <input class="hide" id="image-input" type="file" accept="image/*"/>
+                              <span class="change-photo text-center"><img src="../images/icons/edit-photo.svg"></span>
+                            </label>
+                        </div>
+                	</div>
+
+                	<div class="row">
+                		<div class="col-md-2 text-left">
+                			<img src="../images/icons/phone.svg" alt="logo"/>
+                		</div>
+                		<div class="col-md-10 text-left">
+                			<p class="fs-22">+63917-123-4567</p>
+                		</div>
+                	</div>
+                	<div class="row">
+                		<div class="col-md-2 text-left">
+                			<img src="../images/icons/email.svg" alt="logo"/>
+                		</div>
+                		<div class="col-md-10 text-left">
+                			<p class="fs-22">willholland@gmail.com</p>
+                		</div>
+                	</div>                	
+                	<div class="row">
+                		<div class="col-md-2 text-left">
+                			<img src="../images/icons/home.svg" alt="logo"/>
+                		</div>
+                		<div class="col-md-10 text-left">
+                			<p class="fs-22">Area B, Batasan Hills, Quezon City</p>
+                		</div>
+                	</div>    
+
+
+         		</div><!-- Card-body ends-->
+         	</div> <!-- CARD ends-->
+         </div>	<!-- col-md-4 ends-->
+
+	        <div class="col-md-9">
+	            <div class="card h-100">
+	                <div class="card-body ">
+	                	<div class="row mb-2 mt-4">
+	                		<div class="col-md-3 text-left">
+	                			<label>Applicant ID:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>25467822</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Date Hired:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>Aug 09, 2001</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Date Applied:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>July 09, 2001</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Position:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>Accounting Specialist</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Division:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>Finance</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Department:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>Finance Operations</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Section:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left font-weight-bold">
+	                			<label>General Accounting & Compliance</label>
+	                		</div>
+	                	</div>
+	                	<div class="row mb-2">
+	                		<div class="col-md-3 text-left">
+	                			<label>Status:</label>
+	                		</div>
+	                		<div class="col-md-9 text-left">
+	                			<p class="status-blue p-sm-1">On-boarding</p>
+	                		</div>
+	                	</div>
+	         		</div><!-- Card-body ends-->
+	         	</div> <!-- CARD ends-->
+	         </div>	<!-- col-md-8 ends-->
+     	</div>	<!-- Row ends-->
+
         <div class="col-md-12">
-              <div class="card">
+              <div class="card mb-4">
                 <div class="card-body">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
@@ -475,7 +592,7 @@
                       <a class="nav-link"  data-toggle="tab" href="#tab4" role="tab" aria-controls="workexp-1" aria-selected="false">Work Experience</a>
                     </li>   
                     <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#tab5" role="tab" aria-controls="application-1" aria-selected="false">Application</a>
+                      <a class="nav-link"  data-toggle="tab" href="#tab5" role="tab" aria-controls="Movement-1" aria-selected="false">Movement Info</a>
                     </li>                  
                   </ul>
 
@@ -485,13 +602,6 @@
                     <div class="tab-pane fade active show" id="tab1" role="tabpanel">
                       <h4 class="card-title mt-4 mb-4"><div class="red-title">PERSONAL INFORMATION</div></h4>
                         <div class="row mb-4">
-
-                          <div class="col-md-2">
-                            <label class="your-face" id="image-form" for="image-input">
-                              <div class="image-persuader"><img src="../images/upload-image.svg" alt="upload-image" class="upload-image"/></div>
-                              <input class="hide" id="image-input" type="file" accept="image/*"/>
-                            </label>
-                          </div>
                           <div class="col-md-2">
                             <label for="Title">Title</label>
                             <select class="form-control">
@@ -501,23 +611,21 @@
                               <option value="4">Mrs.</option>
                             </select>
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-5">
                               <label>First Name</label> <label style="color:red;"> *</label>
-                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter First Name">
+                              <input type="text" class="form-control" id="" placeholder="Enter First Name">
                           </div>
-                          <div class="col-md-4">
-                              <label>Last Name</label> <label style="color:red;"> *</label>
-                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Last Name">
-                          </div>
+                          <div class="col-md-5">
+                              <label>Middle Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="" placeholder="Enter Middle Name">
+                            </div> 
                         </div>
                         <div class="row mb-4">
-                          <div class="col-md-2">
-
+                          <div class="col-md-5">
+                              <label>Last Name</label> <label style="color:red;"> *</label>
+                              <input type="text" class="form-control" id="" placeholder="Enter Last Name">
                           </div>
-                          <div class="col-md-4">
-                              <label>Middle Name</label> <label style="color:red;"> *</label>
-                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Middle Name">
-                            </div>                            
+                           
                           <div class="col-md-2">
                             <label for="Title">Suffix</label>
                             <select class="form-control">
@@ -536,9 +644,9 @@
                               <option value="13">X</option>
                             </select>                           
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-5">
                               <label>Nickname</label>
-                              <input type="text" class="form-control" id="FirstnameForm" placeholder="Enter Nickname">
+                              <input type="text" class="form-control" id="" placeholder="Enter Nickname">
                             </div>                            
                         </div>
                         <div class="row mb-4">
@@ -1176,190 +1284,41 @@
 
                     </div>
 
-<!-- APPLICATION TAB --> 
+<!-- MOVEMENT INFO TAB --> 
                     <div class="tab-pane fade" id="tab5" role="tabpanel">
-                      <h4 class="card-title mt-4 mb-4"><div class="red-title">APPLICATION</div></h4>   
-                      <label>Position Applying For</label> 
-                        <div class="row mb-4">
-                            <div class="col-md-4">
-                            <input type="text" class="form-control" id="" placeholder="First Choice">
-                            </div>
-                            <div class="col-md-4">
-                            <input type="text" class="form-control" id="" placeholder="Second Choice">
-                            </div>
-                            <div class="col-md-4">
-                            <input type="text" class="form-control" id="" placeholder="Third Choice">
-                            </div>
-                        </div> 
-                        <div class="row mb-4">
-                            <div class="col-md-4">
-                            <label>Availability</label>
-                            <input type="text" class="form-control" id="" placeholder="Availability">
-                            </div>
-                            <div class="col-md-4">
-                              <label>Desired Salary</label>
-                            <input type="text" class="form-control" id="" placeholder="Input Amount">
-                            </div>
-                        </div>
-                        <div class="row mb-8">
-                          <div class="col-md-4">
-                        <label>How did you find out about our job vacancies?</label>
-                            <select class="form-control">
-                              <option value="1">Select</option>
-                              <option value="2">Campus Recruitment</option>
-                              <option value="3">Direct Source/Internal Hiring</option>
-                              <option value="4">CSMC Facebook Careers Page</option>
-                              <option value="5">CSMC Website</option>
-                              <option value="6">Viber</option>
-                              <option value="7">Job Sites/Boards</option>
-                              <option value="8">Referral</option>
-                              <option value="9">Review Center/School</option>
-                              <option value="10">Walk-In Applicant</option>
-                              <option value="11">Others</option>
-                            </select>
-                          </div>
-                            <div class="col-md-6">
-                            <label>Specify here</label>
-                            <input type="text" class="form-control" id="" placeholder="Specify here">
-                          </div>
-                        </div>
 
+                    <div class="row mt-4">
+                    	<div class="col-md-12 text-right">
+						<div class=" btn-group">
+						  <button type="button" class=" btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Download Forms
+						  </button>
+						  <div class="dropdown-menu">
+						    <a class="dropdown-item" href="#">Form 1</a>
+						    <a class="dropdown-item" href="#">Form 2</a>
+						    <a class="dropdown-item" href="#">Form 3</a>
+						  </div>
+						</div>
 
-                      <div class="mt-10">
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes1" name="YesorNo1" value="Yes" >
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No1" name="YesorNo1" value="No" >
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Have you ever been discharged from previous employment?</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1 pl-2">
-                                <input type="radio" id="Yes2" name="YesorNo2"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No2" name="YesorNo2" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Have you ever been subjected to any company administrative or legal proceedings?</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes3" name="YesorNo3"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No3" name="YesorNo3" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Have you ever been charged, accused, indicted, or tried for violation of any laws, ordinances, rules, or regulations?</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes4" name="YesorNo4"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No4" name="YesorNo4" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Are you suffering or have you suffered from any major ailments over the last 5 years? Please also describe any physical ailments that you may have.</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes5" name="YesorNo5"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No5" name="YesorNo5" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>(For Licensed Professionals) Have you been suspended, sanctioned or otherwise restricted from practicing your profession in any private or government program (i.e. health insurance, etc.)?</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes6" name="YesorNo6"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No6" name="YesorNo6" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Do you have any history of past due or cancelled credit cards, or past due loans?</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes7" name="YesorNo7"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No7" name="YesorNo7" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Have you previously applied with Cardinal Santos Medical Center or any subsidiary of Metro Pacific Investment Corporation (MPIC)?</label>
-                              </div>
-                              </div>
-                          </fieldset>
-                          <hr><fieldset>
-                              <div class="row">
-                              <div class="col-md-1">
-                                <input type="radio" id="Yes8" name="YesorNo8"  value="Yes">
-                                <label for="Yes">Yes</label>
-                              </div>
-                              <div class="col-md-1">
-                                <input type="radio" id="No8" name="YesorNo8" value="No">
-                                <label for="No">No</label>
-                              </div>                              
-                              <div class="col-md-10">
-                                <label>Do you have any relatives/friends employed with Cardinal Santos Medical Center or any subsidiary of Metro Pacific Investment Corporation (MPIC)?</label>
-                              </div>
-                              </div>
-                          </fieldset>
+						<button type="button" class="btn btn-outline-danger btn-icon-text"><i class="ph-plus"></i> Add Movement</button>
+					</div>
                     </div>
 
-                    <hr>
-                    <hr class="mt-10">
+                    <div class="row">
+                    	<div class="col-md-1">
+                    		<span class="circle"></span>
+                    	</div>
+                    	<div class="col-md-11">
+		                    <div class="card mt-4">
+		                    	<div class="card-body">
+		                    		aaaaaaaaaaaaa
+		                    	</div>
+		                    </div>
+	                	</div>
+	                 </div> <!-- End of row Card-->
+                  </div><!--End of TabPanel-->
 
-                    <div class="row ">
-                      <div class="col mt-4 mb-4 text-center"><input type="checkbox"> &nbsp;
-                      By ticking, you are confirming that I have read and understood the <a href="#" data-toggle="modal" data-target="#TermsCondition">terms and conditions.</a></div>
-                    </div>
-                      <div class="col text-right"><button type="button" class="button-text mt-4 btn btn-primary btn-icon-text" onclick="showSuccessToast()">Submit</button></div>
-                    </div>
 
-                  </div>
-                </div>
               </div>
           </div>
 
@@ -1367,9 +1326,11 @@
 
 
 
+      	
+
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
-        <footer class="footer mt-4">
+        <footer class="footer">
             <div class="card">
                 <div class="card-body">
                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
@@ -1379,10 +1340,9 @@
                 </div>    
             </div>        
         </footer>
-        <!-- partial -->
-      </div>
 
-<!-- Modal ADD FAMILY MEMBER-->
+
+        <!-- Modal ADD FAMILY MEMBER-->
         <div class="modal fade" id="AddFamilyMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1813,7 +1773,7 @@
       </div>
 
 <!-- Modal TERMS & CONDITIONS-->
-        <div class="modal fade" id="TermsCondition" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="MovementInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -1821,21 +1781,21 @@
               </div>
               <div class="modal-body">  
                 <form class="form-sample">
-                   <div class="row mb-4 pl-2 pr-2">
-                     <p class="fs-22">I hereby certify that the information written in my Application for Employment is true, complete, and correct.</br></br></p>
+                	<div class="row mb-4 pl-2 pr-2">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Action
+						  </button>
+						  <div class="dropdown-menu">
+						    <a class="dropdown-item" href="#">Action</a>
+						    <a class="dropdown-item" href="#">Another action</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
+						    <div class="dropdown-divider"></div>
+						    <a class="dropdown-item" href="#">Separated link</a>
+						  </div>
+						</div>
 
-                      <p class="fs-22">I hereby authorize Cardinal Santos Medical Center (managed by Colinas Verdes Hospital Managers Corporation) to collect and use certain personal data about me to facilitate the processing of my application for employment. This may include my address and contact details, marital status, citizenship, educational background, employment history and details, areas of expertise, medical records and history, government issued identifications (SSS, Philhealth, TIN), tax records and other relevant records. As such, I authorize CSMC to share these information to affiliates and necessary third parties for any legitimate purpose. I further agree that the Company may retain and use the information I have provided for as long as reasonably and legally necessary from the receipt of my application for purposes of ongoing and future recruitment opportunities. The data collected will be stored in applicant’s database located in HR office and shall be kept strictly confidential.</br></br></p>
-
-                      <p class="fs-22">I bind myself that if employed by CVHMC or any of its subsidiaries, any false statement, omission, concealment, and/or misrepresentation in my application, shall result in the denial of my application or shall constitute sufficient cause for dismissal.</br></br></p>
-
-                      <p class="fs-22">I agree that I shall submit myself to physical and medical examinations, including the government-mandated random drug-testing program, before and during employment, refusal from which might entail appropriate disciplinary sanction.</br></br></p>
-
-                      <p class="fs-22"> I hereby authorize CVHMC to conduct inquiries about my scholastic and employment records and verify all information stated in this application. I further authorize CSMC to conduct background checks from my previous employer.</br></br></p>
-
-                      <p class="fs-22">I further give my consent to the turn-over of my application records and other pertinent documents by the Company to the future Operator of CSMC, if any, or its designee, upon the termination or expiration of the Lease Agreement. It is understood that such waiver shall only be to the extent necessary to ensure the smooth turn-over of hospital operations upon the termination or expiration of the said Lease Agreement.</br></br></p>
-
-                      <p class="fs-22">I hereby confirm that I have read and understood the contents of this form.</br></br></p>
-                   </div>
+                	</div>
                   </form>
                   </div>
 
@@ -1854,11 +1814,10 @@
 
         </div>
 
-
-
+        <!-- partial -->
+      </div>
       <!-- main-panel ends -->
     </div>
-
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
