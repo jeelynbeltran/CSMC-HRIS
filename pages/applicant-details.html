@@ -398,18 +398,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#manpower-list" aria-expanded="false" aria-controls="manpower-list">
-              <i class="ph-user-list menu-icon"></i>
+           <a class="nav-link" href="../pages/manpower-allocation.html">
+              <i class="ph-presentation-chart menu-icon"></i>
               <span class="menu-title">Manpower</span>
-              <i class="ph-caret-down caret-down"></i>
             </a>
-            <div class="collapse" id="manpower-list">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../pages/manpower-allocation.html">Manpower Allocation</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../pages/position-management.html">Position Management</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../pages/allocation-approval.html">Allocation Approval</a></li>
-              </ul>
-            </div>
           </li>
           <li class="nav-item">
            <a class="nav-link" href="../pages/recruitment.html">
@@ -451,7 +443,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../pages/data-configuration.html">
               <i class="ph-sliders menu-icon"></i>
-              <span class="menu-title">Data Configuration</span>
+              <span class="menu-title">Master Data</span>
             </a>
           </li>
 
@@ -460,19 +452,18 @@
       <!-- partial -->
       <div class="main-panel pl-4 pr-4">
       	<div class="row mb-4">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card h-100">
                 <div class="card-body">
-                	<div class="row mb-s ">
-                		<div class="col text-center">
-							<label id="image-form" for="image-input">
-                              	<img src="../images/faces/employee1.svg" alt="Image" class="img-75"/>
+                	<div class="row mb-s container">
+                		<label class="col text-center">
+							             <p id="image-form" for="image-input">
+                              	<img src="../images/faces/employee1.svg" alt="Image" class="image"/>
                               <input class="hide" id="image-input" type="file" accept="image/*"/>
-                              <span class="change-photo text-center"><img src="../images/icons/edit-photo.svg"></span>
-                            </label>
-                        </div>
+                              <span class="text-center middle text">change photo</span>
+                          </p>
+                        </label>
                 	</div>
-
                 	<div class="row">
                 		<div class="col-md-2 text-left">
                 			<img src="../images/icons/phone.svg" alt="logo"/>
@@ -503,7 +494,7 @@
          	</div> <!-- CARD ends-->
          </div>	<!-- col-md-4 ends-->
 
-	        <div class="col-md-9">
+	        <div class="col-md-8">
 	            <div class="card h-100">
 	                <div class="card-body ">
 	                	<div class="row mb-2 mt-4">
@@ -589,10 +580,10 @@
                       <a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="education-1" aria-selected="false">Education</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#tab4" role="tab" aria-controls="workexp-1" aria-selected="false">Work Experience</a>
+                      <a class="nav-link"  data-toggle="tab" href="#tab4" role="tab" aria-controls="workexp-1" aria-selected="false">Work Experience & Skills</a>
                     </li>   
                     <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#tab5" role="tab" aria-controls="Movement-1" aria-selected="false">Movement Info</a>
+                      <a class="nav-link"  data-toggle="tab" href="#tab5" role="tab" aria-controls="Movement-1" aria-selected="false">Application Status</a>
                     </li>                  
                   </ul>
 
@@ -1290,7 +1281,7 @@
                     <div class="row mt-4">
                     	<div class="col-md-12 text-right">
 						<div class=" btn-group">
-						  <button type="button" class=" btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    Download Forms
 						  </button>
 						  <div class="dropdown-menu">
@@ -1300,248 +1291,221 @@
 						  </div>
 						</div>
 
-						<button type="button" class="btn btn-outline-danger btn-icon-text"><i class="ph-plus"></i> Add Movement</button>
+						<button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#AddMovement"><i class="ph-plus"></i> Add Status</button>
 					</div>
                     </div>
 
 
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-blue"><span class="vl"></span>
-                      </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">On-boarding</div>
-                               <div class="col-md-2 font-weight-bold">June 22, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Anastasia Joseph</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-blue p-sm-1 ml-2">On-boarding</p>
-                                
-                             </div>                
-                          </div>
+                  <ul class="bullet-line-list">
+                    <li>
+                      <div class="row mt-4 ml-5">
+                          <div class="col-md-12">
+                            <div class="card pt-3">
+                              <div class="card-body">
+                                 <div class="row">
+                                   <div class="col-md-2">Date</div>
+                                   <div class="col-md-2">Processed By</div>
+                                   <div class="col-md-2">Progress</div>
+                                   <div class="col-md-2">Remarks</div>
+                                 </div>
+                                 <div class="row mt-2">
+                                   <div class="col-md-2 font-weight-bold">June 22, 2022</div>
+                                   <div class="col-md-2 font-weight-bold">Anastasia Joseph</div>
+                                   <div class="col-md-2 font-weight-bold">On going</div>
+                                   <div class="col-md-4 font-weight-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+                                   <div class="col-md-2"><p class="status-blue p-sm-1 ml-4">On-boarding</p></div>
+                                 </div>
+                                <button type="button" class="btn btn-outline-danger btn-icon-text" data-toggle="modal" data-target="#EditMovement"> Edit Details</button>                
+                              </div>
+                            </div>
                         </div>
-                    </div>
-                   </div> <!-- End of row Card-->
+                       </div> <!-- End of row Card-->
+                    </li>
 
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-blue"><span class="vl"></span>
-                      </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Pre-employment</div>
-                               <div class="col-md-2 font-weight-bold">June 18, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Alex Tillery</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-blue p-sm-1 ml-2">Pre-employment</p>
-                                
-                             </div>                
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">June 10, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                  <div class="col-md-2"><p class="status-blue p-sm-1 ml-4">Medical Process</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-blue"><span class="vl"></span>
                       </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Medical Process</div>
-                               <div class="col-md-2 font-weight-bold">June 10, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-blue p-sm-1 ml-2">Medical Process</p>
-                                
-                             </div>                
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">June 05, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                 <div class="col-md-2"><p class="status-blue p-sm-1 ml-4">Job Offer</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
-
-                    <div class="row mt-4">
-                    	<div class="col-md-1">
-                    		<span class="circle-blue"><span class="vl"></span>
-                    	</div>
-                    	<div class="col-md-11">
-		                    <div class="card pt-3">
-		                    	<div class="card-body">
-		                    	   <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
-
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Medical Process</div>
-                               <div class="col-md-2 font-weight-bold">June 05, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Sterling Warner</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-blue p-sm-1 ml-2">Medical Process</p>
-                                
-                             </div>                
-		                    	</div>
-		                    </div>
-	                	</div>
-	                 </div> <!-- End of row Card-->
-
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-blue"><span class="vl"></span></span>
                       </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Job Offer</div>
-                               <div class="col-md-2 font-weight-bold">June 01, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Tyne Fernandez</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-blue p-sm-1 ml-2">Job Offer</p>
-                                
-                             </div>                
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">May 28, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                 <div class="col-md-2"><p class="status-green p-sm-1 ml-2">Line Interview</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
-
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-green"><span class="vl"></span></span>
                       </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Division Head Interview</div>
-                               <div class="col-md-2 font-weight-bold">May 28, 2022</div>
-                               <div class="col-md-2 font-weight-bold">William Walsh</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-green p-sm-1 ml-2">Division Head Interview</p>
-                                
-                             </div>                
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">June 10, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                 <div class="col-md-2"><p class="status-green p-sm-1 ml-2">HR Final Interview</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-green"><span class="vl"></span></span>
                       </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">HR Initial</div>
-                               <div class="col-md-2 font-weight-bold">May 25, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Wallace Row</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-green p-sm-1 ml-2">HR Initial</p>
-                                
-                             </div>                
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">May 25, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                 <div class="col-md-2"><p class="status-green p-sm-1 ml-2">HR Initial Interview</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-green"><span class="vl"></span></span>
                       </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Testing/Exam</div>
-                               <div class="col-md-2 font-weight-bold">May 23, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Daniel Anderson</div>
-                               <div class="col-md-2 font-weight-bold"></div>
-                                <p class="status-green p-sm-1 ml-2">Testing/Exam</p>
-                                
-                             </div>                
+
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">June 10, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                 <div class="col-md-2"><p class="status-orange p-sm-1 ml-2">Testing / Exam</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
-
-                    <div class="row mt-4">
-                      <div class="col-md-1">
-                        <span class="circle-orange"></span>
                       </div>
-                      <div class="col-md-11">
-                        <div class="card pt-3">
-                          <div class="card-body">
-                             <div class="row">
-                               <div class="col-md-2">Movement Type</div>
-                               <div class="col-md-2">Date</div>
-                               <div class="col-md-2">Processed By</div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-                             </div>
-                             <div class="row mt-2">
-                               <div class="col-md-2 font-weight-bold">Applied</div>
-                               <div class="col-md-2 font-weight-bold">May 20, 2022</div>
-                               <div class="col-md-2 font-weight-bold">Ralph Herrera</div>
-                               <div class="col-md-2"></div>
-                                <p class="status-orange p-sm-1 ml-2">Applied</p>
-                                
-                             </div>                
+                    <li>
+                      <div class="row mt-4 ml-5">
+                        <div class="col-md-12">
+                          <div class="card pt-3">
+                            <div class="card-body">
+                               <div class="row">
+                                 <div class="col-md-2">Date</div>
+                                 <div class="col-md-2">Processed By</div>
+                                  <div class="col-md-2">Progress</div>
+                                  <div class="col-md-2">Remarks</div>
+
+                               </div>
+                               <div class="row mt-2">
+                                 <div class="col-md-2 font-weight-bold">June 10, 2022</div>
+                                 <div class="col-md-2 font-weight-bold">Jackson Mcdaniel</div>
+                                 <div class="col-md-2 font-weight-bold">Done</div>
+                                 <div class="col-md-4 font-weight-bold">No Remarks</div>
+                                 <div class="col-md-2"><p class="status-orange p-sm-1 ml-2">Applied</p></div>
+                                  
+                               </div>                
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                   </div> <!-- End of row Card-->
+                      </div>
+                     </div> <!-- End of row Card-->
+                    </li>
 
-
-
+                  </ul>
 
                   </div><!--End of TabPanel-->
               </div>
@@ -2033,7 +1997,125 @@
             </div>
 
           </div>
+        </div>
+  <!-- Modal ADD MOVEMENT-->
+        <div class="modal fade" id="AddMovement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Status</h5>
+              </div>
+              <div class="modal-body">  
+                <form class="form-sample">
+                   <div class="row mb-4 pl-2 pr-2">
+                            <div class="col-md-6">
+                              <label for="Title">Application Status</label><label style="color:red;"> *</label>
+                              <select class="form-control">
+                                <option value="1">Select</option>
+                                <option value="2">Applied</option>
+                                <option value="3">Testing/Exam</option>
+                                <option value="4">HR Initial Interview</option>
+                                <option value="5">HR Final Interview</option>
+                                <option value="6">Line Interview</option>
+                                <option value="7">Division Head Interview</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="Title">Progress</label>
+                              <select class="form-control">
+                                <option value="1">Select</option>
+                                <option value="2">Not Started</option>
+                                <option value="3">On going</option>
+                                <option value="4">On Hold</option>
+                                <option value="5">Done</option>
+                              </select>                   
+                            </div>
+                  </div>
 
+
+                   <div class="row mb-4 pl-2 pr-2">
+                            <div class="col-md-12">
+                                <label>Remarks</label>
+                                <textarea type="text" class="form-control" id="FirstNameForm" placeholder="Input Remarks"></textarea>                    
+                            </div>
+                          <div class="col-md-6">                              
+                      </div>
+                  </div>
+               
+                  </form>
+                  </div>
+
+                  <div class="modal-footer1">
+                    <div class="row">
+                      <div class="col text-left"><button type="button" class="btn btn-outline-danger button-text" data-dismiss="modal">Cancel</button>
+                      </div>
+
+                      <div class="col text-right"><button type="button" class="btn btn-primary button-text">Add</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Modal EDIT MOVEMENT-->
+        <div class="modal fade" id="EditMovement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Status</h5>
+              </div>
+              <div class="modal-body">  
+                <form class="form-sample">
+                   <div class="row mb-4 pl-2 pr-2">
+                            <div class="col-md-6">
+                              <label for="Title">Application Status</label><label style="color:red;"> *</label>
+                              <select class="form-control">
+                                <option value="1">Select</option>
+                                <option value="2">Applied</option>
+                                <option value="3">Testing/Exam</option>
+                                <option value="4">HR Initial Interview</option>
+                                <option value="5">HR Final Interview</option>
+                                <option value="6">Line Interview</option>
+                                <option value="7">Division Head Interview</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="Title">Progress</label>
+                              <select class="form-control">
+                                <option value="1">Select</option>
+                                <option value="2">Not Started</option>
+                                <option value="3">On going</option>
+                                <option value="4">On Hold</option>
+                                <option value="5">Done</option>
+                              </select>                   
+                            </div>
+                  </div>
+
+
+                   <div class="row mb-4 pl-2 pr-2">
+                            <div class="col-md-12">
+                                <label>Remarks</label>
+                                <textarea type="text" class="form-control" id="FirstNameForm" placeholder="Input Remarks"></textarea>                    
+                            </div>
+                          <div class="col-md-6">                              
+                      </div>
+                  </div>
+               
+                  </form>
+                  </div>
+
+                  <div class="modal-footer1">
+                    <div class="row">
+                      <div class="col text-left"><button type="button" class="btn btn-outline-danger button-text" data-dismiss="modal">Cancel</button>
+                      </div>
+
+                      <div class="col text-right"><button type="button" class="btn btn-primary button-text">Save</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
         </div>
 
         <!-- partial -->
@@ -2058,6 +2140,9 @@
   <!-- Custom js for this page-->
   <script src="../js/dashboard.js"></script>
   <!-- End custom js for this page-->
+
+
+
 </body>
 
 </html>
